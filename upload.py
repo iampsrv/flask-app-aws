@@ -1,5 +1,4 @@
 from werkzeug.utils import secure_filename
-
 import boto3
 
 bucket_name = 'iampsbucket'

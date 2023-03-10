@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AWS demo app</title>
 </head>
 <body>
     <h3>Upload to S3</h3>
@@ -13,10 +13,5 @@
         <span> Choose file to be uploaded </span>
         <input type="file" name="file" value="file"> <span><input class= "button" type="submit"></span>
         </form> 
-    
-
-    {% for file in files %}
-    <div>{{ file.original_filename }} - <a href="https://{{ file.bucket }}.s3.{{ file.region }}.amazonaws.com/{{ file.filename }}">{{ file.filename }}</a></div>
-    {% endfor %}
 </body>
 </html>
