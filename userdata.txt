@@ -1,0 +1,11 @@
+#!/bin/bash
+apt update && apt upgrade -y
+apt install python3
+apt install git
+apt install python3-pip
+apt install nginx
+apt install gunicorn
+git clone https://github.com/iampsrv/flask-app-aws.git
+cd g-a-test/
+pip install -r req.txt
+python3 main.py
