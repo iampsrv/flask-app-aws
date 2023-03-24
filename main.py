@@ -4,7 +4,7 @@ from upload import *
 app = Flask(__name__)
 @app.route('/')
 def index():
-    return 'Web App with Python Flask!'
+    return 'Web Application with Python Flask!'
 
 
 @app.route("/upload", methods=['POST', 'GET'])
